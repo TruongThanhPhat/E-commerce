@@ -1,0 +1,105 @@
+/* Checkout.css */
+
+.checkout {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #d0caca;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-section {
+    margin-bottom: 20px;
+}
+
+.buyer-info-form, .shipping-info-form, .payment-method-form, .card-info-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], input[type="tel"], input[type="number"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #0c0b0b;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.checkout-summary {
+    margin-top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-item.total {
+    font-weight: bold;
+}
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+    margin-left: 850px;
+}
+
+.order-details {
+    margin-top: 20px;
+}
+
+.order-details p, .order-details h2 {
+    color: #333;
+}
+
+.order-products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-products li {
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}

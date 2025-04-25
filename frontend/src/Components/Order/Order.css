@@ -1,0 +1,143 @@
+/* Order.css */
+
+.order-page {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.order-page h2 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.order-container {
+  max-height: 500px; /* Adjust this value as needed */
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.order {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-left: 500px;
+}
+
+.order h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.order h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.buyer-info, .note, .status {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.order ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order ul li {
+  background-color: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: #333;
+}
+
+.order p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.order button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff5a5a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order button:hover {
+  background-color: #e14c4c;
+}
+
+.stats-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stats-toggle button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.stats-toggle button:hover {
+  background-color: #45a049;
+}
+
+.order-stats {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 500px;
+}
+
+.order-stats h3 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-right: 500px;
+}
+
+.order-stats p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.order-stats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-stats ul li {
+  background-color: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,122 @@
+.list-product {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.listproduct-allproducts {
+    max-height: 400px; /* Giới hạn chiều cao của danh sách */
+    overflow-y: auto;  /* Thêm thanh cuộn dọc */
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.listproduct-format {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.listproduct-format:hover {
+    background-color: #f1f1f1;
+}
+
+.listproduct-product-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.listproduct-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.listproduct-remove-icon, .listproduct-edit-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.listproduct-remove-icon:hover, .listproduct-edit-icon:hover {
+    transform: scale(1.1);
+}
+
+.listproduct-bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.listproduct-totals {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.edit-product-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 400px; /* Giới hạn chiều rộng */
+}
+
+.edit-product-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.edit-product-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-product-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-product-form button[type="button"] {
+    background-color: #f44336;
+}
+
+.edit-product-form button:hover {
+    opacity: 0.9;
+}

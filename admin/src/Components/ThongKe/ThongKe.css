@@ -1,0 +1,139 @@
+/* ThongKe.css */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.thongke, .thongke-totals {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thongke {
+    border: 2px solid #ccc;
+}
+
+.thongke-totals {
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    margin-top: 20px; /* Đảm bảo khoảng cách đều */
+}
+
+.thongke h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.thongke-format-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    color: #333;
+    background-color: #e9e9f0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.thongke-format-main p {
+    margin: 0;
+}
+
+.thongke-allproducts {
+    margin-top: 10px;
+}
+
+.thongke-format {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.thongke-format:nth-child(even) {
+    background-color: #f8f8fc;
+}
+
+.thongke-format p {
+    margin: 0;
+}
+
+.thongke-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thongke-remove-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.thongke-totals {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.thongke-totals > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.thongke-totals h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.thongke-totals p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.totals-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.totals-row p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.totals-row-title {
+    flex: 2;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}

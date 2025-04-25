@@ -1,0 +1,206 @@
+/* DonHang.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.orders {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 700px;
+}
+
+h2 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-mode-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.view-mode-selector button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.view-mode-selector button:hover {
+  background-color: #45a049;
+}
+
+.stats {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.stats h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.stats p, .stats ul {
+  margin: 10px 0;
+  color: #000000;
+  font-size: 18px;
+}
+
+.stats ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stats ul li {
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.user-orders {
+  margin-bottom: 40px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.user-orders h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table td {
+  color: #333;
+}
+
+table td div {
+  margin-bottom: 5px;
+}
+
+.edit-order {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.edit-order h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.edit-order form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-order label {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.edit-order input[type="text"],
+.edit-order input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.edit-order button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.edit-order button:hover {
+  background-color: #45a049;
+}
+
+.edit-order button[type="button"] {
+  background-color: #ccc;
+  margin-left: 10px;
+}
+
+.edit-order button[type="button"]:hover {
+  background-color: #bbb;
+}
+
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  table th {
+    display: none;
+  }
+  
+  table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    white-space: nowrap;
+  }
+  
+  table td:before {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: calc(50% - 24px);
+    white-space: nowrap;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}

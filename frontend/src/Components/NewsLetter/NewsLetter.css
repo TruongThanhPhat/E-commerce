@@ -1,0 +1,156 @@
+.newsletter{
+    width: 80%;
+    max-width: 900px; /* Thêm giới hạn chiều rộng tối đa */
+    height: auto; /* Thay đổi height thành auto để nó có thể điều chỉnh dựa trên nội dung */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Thay đổi từ align-content thành align-items để căn giữa dọc */
+    margin: 100px auto; /* Thay đổi margin-bottom thành margin */
+    padding: 20px; /* Sử dụng padding tương đối thay vì cố định */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 30px;
+    border-radius: 20px; /* Thêm bo góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+}
+
+.newsletter h1{
+    color: rgb(135, 147, 222);
+    font-size: 2.5rem; /* Sử dụng REM cho kích thước font */
+    font-weight: 600;
+    text-align: center; /* Canh giữa văn bản */
+}
+.newsletter p{
+    color: rgb(135, 147, 222);
+    font-size: 1.5rem; /* Sử dụng REM cho kích thước font */
+    text-align: center; /* Canh giữa văn bản */
+}
+.newsletter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; /* Đổi màu nền */
+    width: 100%; /* Thay đổi width thành 100% */
+    max-width: 700px; /* Thêm giới hạn chiều rộng tối đa */
+    padding: 0 20px; /* Sử dụng padding tương đối thay vì cố định */
+    height: 60px; /* Giảm chiều cao */
+    border-radius: 30px; /* Thay đổi giá trị border-radius */
+    border: 1px solid #ccc; /* Đổi màu đường viền */
+}
+.newsletter input{
+    flex: 1; /* Sử dụng flex để căn chỉnh input */
+    margin-left: 20px; /* Giảm khoảng cách bên trái */
+    padding: 10px; /* Thêm padding cho input */
+    border: none;
+    outline: none;
+    font-size: 1rem; /* Sử dụng REM cho kích thước font */
+}
+.newsletter div button{
+    width: 30%; /* Thay đổi width thành phần trăm */
+    max-width: 200px; /* Thêm giới hạn chiều rộng tối đa */
+    height: 100%; /* Đặt chiều cao bằng 100% */
+    border-radius: 30px;
+    background: black;
+    color: #fde1ff;
+    font-size: 1rem; /* Sử dụng REM cho kích thước font */
+    cursor: pointer;
+}
+@media(max-width:1280px){
+    .newsletter{
+        padding: 0px 80px;
+        margin-bottom: 120px;
+        gap: 20px;
+    }
+    .newsletter h1{
+        font-size: 36px;
+    }
+    .newsletter p{
+        font-size: 16px;
+    }
+    .newsletter div{
+        width: 600px;
+        height: 60px;
+    }
+    .newsletter div input{
+        width: 400px;
+    }
+    .newsletter div button{
+        width:160px;
+        height: 60px;
+    }
+}
+@media(max-width:1024px){
+    .newsletter{
+        margin-bottom: 60px;
+    }
+    .newsletter h1{
+        font-size: 30px;
+    }
+    .newsletter p{
+        font-size: 14px;
+    }
+    .newsletter div{
+        width: 500px;
+        height: 50px;
+    }
+    .newsletter div input{
+        width: 300px;
+        font-size: 14px;
+    }
+    .newsletter div button{
+        width:120px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+@media(max-width:800px){
+    .newsletter{
+        margin-bottom: 30px;
+        height: 35vh;
+    }
+    .newsletter h1{
+        font-size: 18px;
+    }
+    .newsletter p{
+        font-size: 12px;
+    }
+    .newsletter div{
+        width: 400px;
+        height: 40px;
+    }
+    .newsletter div input{
+        width: 200px;
+        font-size: 13px;
+    }
+    .newsletter div button{
+        width:100px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+@media(max-width:500px){
+    .newsletter{
+        height: 25vh;
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+    .newsletter h1{
+        font-size: 16px;
+    }
+    .newsletter p{
+        font-size: 13px;
+        max-width: 200px;
+        text-align: center;
+    }
+    .newsletter div{
+        width: 290px;
+    }
+    .newsletter div input{
+        width: 130px;
+    }
+    .newsletter div button{
+        width:100px;
+        height: 40px;
+        font-size: 13px;
+    }
+}

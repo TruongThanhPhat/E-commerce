@@ -1,0 +1,242 @@
+/* CartItems.css */
+
+.cartitems {
+    margin: 100px 70px;
+}
+
+.cartitems hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.carticon-product-icon {
+    height: 62px;
+}
+
+.cartitems-remove-icon {
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.cartitems-quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.cartitems-quantity {
+    width: 5px;
+    height: 10px;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    background: #fff;
+}
+
+.cartitems-down {
+    display: flex;
+    margin: 100px 0px;
+}
+
+.cartitems-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.cartitems-total button {
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cartitems-total button:hover {
+    background: #e04b4b;
+}
+
+.cartitems-promocode {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartitems-promocode p {
+    color: #555;
+}
+
+.cartitems-promobox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 504px;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.cartitems-promobox input[type="text"] {
+    flex: 1;
+    border: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cartitems-promobox button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cartitems-promobox button:hover {
+    background: #333;
+}
+
+@media (max-width: 1280px) {
+    .cartitems {
+        margin: 60px 50px;
+    }
+
+    .cartitems-format-main {
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 15px;
+    }
+
+    .carticon-product-icon {
+        height: 50px;
+    }
+
+    .cartitems-remove-icon {
+        margin: auto;
+    }
+
+    .cartitems-quantity {
+        width: 35px;
+        height: 30px;
+    }
+
+    .cartitems-down {
+        margin: 80px 0px;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .cartitems-total {
+        margin: 0;
+    }
+
+    .cartitems-total button {
+        max-width: 200px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .cartitems-promobox {
+        width: auto;
+        max-width: 500px;
+    }
+
+    .cartitems-promobox input {
+        width: 100%;
+    }
+
+    .cartitems-promobox button {
+        width: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartitems-format-main {
+        display: none;
+    }
+
+    .cartitems-format {
+        display: grid;
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        gap: 10px;
+    }
+
+    .carticon-product-icon {
+        height: 40px;
+    }
+
+    .cartitems-remove-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cartitems-quantity {
+        width: 30px;
+        height: 20px;
+    }
+
+    .cartitems-total {
+        margin: 0;
+    }
+
+    .cartitems-total button {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .cartitems-down {
+        margin: 80px 0;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cartitems-promobox {
+        width: auto;
+        max-width: 400px;
+    }
+
+    .cartitems-promobox input {
+        width: 100%;
+    }
+
+    .cartitems-promobox button {
+        width: 120px;
+    }
+}

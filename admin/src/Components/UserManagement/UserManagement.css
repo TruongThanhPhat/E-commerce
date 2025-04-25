@@ -1,0 +1,111 @@
+.user-management {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.user-management h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-management-header,
+.user-management-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-management-header {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user-management-header p,
+.user-management-item p {
+    margin: 0;
+    text-align: center;
+}
+
+.user-management-list {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    max-height: 500px; /* Thêm giới hạn chiều cao */
+    overflow-y: auto; /* Thêm thanh cuộn dọc */
+}
+
+.user-management-item {
+    transition: background-color 0.3s;
+}
+
+.user-management-item:hover {
+    background-color: #f1f1f1;
+}
+
+.user-management-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-management-delete-icon,
+.user-management-edit-icon,
+.user-management-toggle-password {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.user-management-delete-icon:hover,
+.user-management-edit-icon:hover,
+.user-management-toggle-password:hover {
+    transform: scale(1.1);
+}
+
+.edit-user-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edit-user-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-user-form label {
+    font-weight: bold;
+}
+
+.edit-user-form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-user-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-user-form button:hover {
+    background-color: #555;
+}
